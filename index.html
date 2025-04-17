@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lobster&family=Playwrite+CO+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Stop Watch</title>
+  </head>
+  <body>
+
+    <div class="theme-toggle">
+        <input type="checkbox" id="toggleCheckbox" />
+        <label for="toggleCheckbox" class="toggle-label">
+          <i class="fa-solid fa-sun"></i>
+          <i class="fa-solid fa-moon"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+    
+    <div class="outer">
+      <div class="iconHeading">
+        <i class="fa-solid fa-stopwatch white"></i>
+        <h1>Stop Watch</h1>
+      </div>
+
+      <div class="box">
+        <div class="spans">
+          <span id="hr">00</span> : 
+          <span id="min">00</span> : 
+          <span id="sec">00</span> :
+          <span id="msec">000</span>
+        </div>
+
+        <div class="buttons">
+            <button onclick="stop()"><i class="fa-solid fa-square"></i></button>
+            <button id="start" class="red-btn" onclick="start()"><i class="fa-solid fa-play"></i></button>
+            <button onclick="reset()"><i class="fa-solid fa-clock-rotate-left"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS Link -->
+    <script src="./app.js"></script>
+  </body>
+</html>

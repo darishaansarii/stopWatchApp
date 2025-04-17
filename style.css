@@ -1,0 +1,246 @@
+body {
+    background-color: black;
+    font-family: Poppins, sans-serif;
+}
+
+.white {
+    color: #d4cfcf;
+}
+
+.fa-stopwatch {
+    font-size: 150px;
+}
+
+h1 {
+    color: #f12d2d;
+    font-size: 70px;
+}
+
+.outer {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.iconHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+.box {
+    border: 2px solid grey;
+    height: 250px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #d4cfcf;
+    font-size: 45px;
+}
+
+.box span {
+    color: #d4cfcf;
+    font-size: 45px;
+}
+
+button {
+    border-radius: 50%;
+    border: 2px solid grey;
+    padding: 8px 10px;
+    background-color: black;
+    margin: 4px;
+}
+
+button i {
+    color: #d4cfcf;
+    font-size: 10px;
+}
+
+.red-btn {
+    border: 2px solid #f12d2d;
+    padding: 14px 16px;
+    background-color: #f12d2d;
+}
+
+.red-btn i{
+    font-size: 20px;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.toggle-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    height: 30px;
+    background-color: #d4cfcf;
+    border-radius: 50px;
+    padding: 0 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle-label i {
+    color: white;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.toggle-label .ball {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+#toggleCheckbox {
+    display: none;
+}
+
+#toggleCheckbox:checked + .toggle-label .ball {
+    transform: translateX(47px);
+}
+
+body.light {
+    background-color: #d4cfcf;
+    color: black;
+}
+
+body.light .toggle-label {
+    background-color: #555;
+}
+
+body.light .white,
+body.light .box,
+body.light .box span,
+body.light button i {
+    color: black;
+}
+
+body.light h1 {
+    color: #f12d2d;
+}
+
+body.light .box {
+    border: 2px solid #555;
+}
+
+body.light button {
+    background-color: #d4cfcf;
+    border-color: #555;
+}
+
+body.light .red-btn {
+    background-color: #f12d2d;
+    border-color: #f12d2d;
+}
+
+body.light .red-btn i {
+    color: #d4cfcf;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+
+@media only screen and (max-width: 900px) {
+    .fa-stopwatch {
+        font-size: 100px;
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+
+    
+    .box {
+        height: 200px;
+        width: 350px;
+        font-size: 35px;
+    }
+
+    .box span {
+        font-size: 35px;
+    }
+
+    button {
+        padding: 6px 8px;
+        margin: 2px;
+    }
+    
+    button i {
+        font-size: 8px;
+    }
+    
+    .red-btn {
+        padding: 10px 12px;
+    }
+    
+    .red-btn i{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .outer {
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .fa-stopwatch {
+        font-size: 80px;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    .box {
+        height: 150px;
+        width: 300px;
+        font-size: 25px;
+    }
+
+    .box span {
+        font-size: 25px;
+    }
+
+    button {
+        padding: 4px 6px;
+        margin: 2px;
+    }
+    
+    button i {
+        font-size: 6px;
+    }
+    
+    .red-btn {
+        padding: 8px 10px;
+    }
+    
+    .red-btn i{
+        font-size: 10px;
+    }
+}
