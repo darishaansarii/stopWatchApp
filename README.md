@@ -7,9 +7,6 @@ It features a dark/light mode toggle, intuitive timer controls, and a modern UI 
 
 👉 [Click here to try it out](https://darishaansarii.github.io/stopWatchApp/)
 
-## 📸 Preview
-
-![Stopwatch App Preview](https://github.com/darishaansarii/stopWatchApp/raw/main/preview.png) <!-- Replace with an actual screenshot if available -->
 
 ## ✨ Features
 
